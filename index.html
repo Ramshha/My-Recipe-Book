@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MyRecipeBook</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <nav>
+        <h1>MY COOK BOOK</h1>
+      </nav>
+      
+      <div class="container">
+
+          <div class="left-column">
+
+              <h3>Enter Recipe</h3>
+
+              <form>
+              <label for="recipe-name">Name:</label>
+              <input type="text" id="recipe-name" required>
+              <br />
+
+              <label for="recipe-ingredients">Ingredients:</label>
+              <textarea id="recipe-ingredients" rows="5" required></textarea>
+              <br />
+
+              <label for="recipe-method">Method:</label>
+              <textarea id="recipe-method" rows="5" required></textarea>
+              <br />
+
+              <button type="submit">Add Recipe</button>
+              </form>
+
+          </div>
+
+
+          <div class="right-column">
+
+              <div id="recipe-list"></div>
+              <div id="no-recipes">You have no recipes.</div>
+              
+          </div>
+      </div>
+
+      <script src="script.js"></script>
+
+    </body>
+  </html>

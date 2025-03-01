@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+}
+nav {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 5px 15px;
+    font-size: 2rem;
+    top: 0;
+    height: 30vh;
+    padding: 20px;
+    left: 0;
+    color: #3a2d22;
+    text-align: center;
+} 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 5%;
+}
+.left-column {
+    width: 25%;
+}
+.right-column {
+    width: 65%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 10px;
+}
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    padding: 10px;
+    background-color: #3a2d22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #55412f;
+}
+#recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+#no-recipes {
+    display: flex;
+    background-color: #FFCCCC;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 44px;
+}
+.recipe {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #00000033;
+}
+.recipe h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.recipe ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.recipe ul li {
+    margin-bottom: 5px;
+}
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: #c82333;
+}
+.edit-button {
+    background-color: #4a5b6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.edit-button:hover {
+    background-color: #15375c;
+}
+.update-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.update-button:hover {
+    background-color: #218838;
+}
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.cancel-button:hover {
+    background-color: #5a6268;
+}
