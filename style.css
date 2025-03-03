@@ -11,9 +11,12 @@ nav {
     height: 30vh;
     padding: 20px;
     left: 0;
-    color: #3a2d22;
     text-align: center;
 } 
+nav h1{
+    color: #55412f;
+    font-weight: 600;
+}
 .container {
     display: flex;
     flex-direction: row;
